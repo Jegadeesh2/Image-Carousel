@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
+*::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: rgb(0,0,0);
+  --white: rgb(255, 255, 255);
+  --panel: rgba(236, 255, 254, 0.808);
+  --btn-bg: rgba(255, 255, 255, 0);
+  --btn-hover : rgba(0, 0, 0, 0.5);
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./images/bg.jpg);
+  color: var(--black);
+}
+
+h2{
+  font-family: 'Merienda', cursive;
+  color: rgb(255, 94, 0);
+  font-weight: 900;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 42rem;
+  height: 25rem;
+  position: relative;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  border-radius: 10px;
+}
+
+.panel{
+  background-color: var(--panel);
+  width: 49rem;
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 2rem;
+  transform: translate(-50%,-50%);
+}
+
+.prev-btn {
+  background-color: var(--btn-bg);
+  border: 0px;
+  width: 2.5rem;
+  height: 2.8rem;
+  font-size:50px;
+  font-weight:bolder;
+  position: relative;
+  top: -60%;
+  left: 1%;
+  border-radius: 15px;
+}
+
+.next-btn{
+  background-color: var(--btn-bg);
+  border: 0px;
+  width: 2.5rem;
+  height: 2.8rem;
+  font-size:50px;
+  font-weight:bolder;
+  position: relative;
+  top: -60%;
+  left: 88%;
+  border-radius: 15px;
+}
+
+.next-btn:hover,
+.prev-btn:hover{
+  background-color: var(--btn-hover);
+}
